@@ -1,0 +1,17 @@
+% Standalone build of the study-overview schematic (vector PDF output).
+% Compile this file on its own to produce figures/study-overview-standalone.pdf.
+\documentclass[border=4pt]{standalone}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage{mathptmx}
+\else
+  \usepackage{fontspec}
+  \setmainfont{texgyretermes}[Extension=.otf, UprightFont=*-regular,
+    BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\fi
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, fit, backgrounds, calc}
+\begin{document}
+\input{study-overview}
+\end{document}

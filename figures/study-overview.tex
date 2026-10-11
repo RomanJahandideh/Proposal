@@ -1,0 +1,69 @@
+% figures/study-overview.tex -- schematic of the proposed study (TikZ).
+% Included by proposal-rebecca.tex and by figures/study-overview-standalone.tex.
+% Requires: \usetikzlibrary{arrows.meta, positioning, fit, backgrounds}
+% Grayscale-safe: meaning is carried by position, line style and labels.
+%   solid arrows  = creative activity
+%   dashed arrows = shaping influence on the activity
+%   dotted arrows = documentation and analysis feeding back
+\begin{tikzpicture}[
+  font=\fontsize{8}{9.6}\selectfont,
+  >={Stealth[length=2mm]},
+  every node/.append style={execute at begin node={\hyphenpenalty=10000}},
+  box/.style={draw, rounded corners=2pt, fill=black!6, align=center,
+               text width=3.15cm, inner sep=3pt, minimum height=10mm},
+  data/.style={draw, fill=white, align=center, text width=3.15cm,
+               inner sep=3pt, minimum height=10mm},
+  cond/.style={draw, dashed, fill=white, align=left, text width=2.55cm,
+               inner sep=3pt},
+  flow/.style={->, thick},
+  doc/.style={->, densely dotted, thick},
+  infl/.style={->, dashed},
+  lab/.style={font=\fontsize{7}{8.4}\selectfont, fill=white, inner sep=1pt},
+  band/.style={font=\fontsize{8}{9.6}\selectfont\bfseries, anchor=north west, inner sep=2pt}
+]
+% ---- creative activity: a two-row cycle ----
+\node[box] (c1) at (0,0)     {1.\ Deliberate contribution\\(a participant's phrase)};
+\node[box] (c2) at (3.75,0)  {2.\ Proposed transformation\\(AI or human interpreter)};
+\node[box] (c3) at (7.5,0)   {3.\ Interpretation and negotiation\\(contributor, collaborators, facilitator)};
+\node[box] (c4) at (7.5,-1.9){4.\ Accept, revise, refuse, or ask for another proposal};
+\node[box] (c5) at (3.75,-1.9){5.\ Shared audiovisual work\\(light, form, sound)};
+\node[cond] (sh) at (-0.25,-1.9) {\textbf{Shaping conditions:} interface rules; asset library; facilitation; my design choices};
+
+\draw[flow] (c1) -- (c2);
+\draw[flow] (c2) -- (c3);
+\draw[flow] (c3) -- (c4);
+\draw[flow] (c4) -- (c5);
+\draw[flow] (c4.north west) -- node[lab, pos=0.45]{another proposal} (c2.south east);
+\draw[flow] (c5.north west) -- node[lab, pos=0.5]{next contribution} (c1.south east);
+\draw[infl] (sh.north) -- (c1.south west -| sh.north);
+\draw[infl] (sh.east) -- (c5.west);
+
+% arrangements strip
+\node[draw, fill=white, align=left, text width=10.6cm, inner sep=3pt,
+      anchor=north, font=\fontsize{7}{8.4}\selectfont] (arr) at (3.75,-3.05)
+ {\textbf{Arrangements (one per workshop):}
+  \emph{contributor-led}: AI proposes, contributor approves;\enspace
+  \emph{group-led}: AI proposes, group applies its agreed procedure;\enspace
+  \emph{human-mediated}: a rotating participant proposes with the same assets, contributor approves.};
+
+\begin{scope}[on background layer]
+  \node[draw=black!50, fill=black!2, rounded corners=3pt, inner xsep=3mm,
+        inner ysep=2.5mm, fit=(c1)(c3)(c5)(sh)(arr), yshift=1.5mm] (creative) {};
+\end{scope}
+\node[band] at (creative.north west) {Creative activity (workshops)};
+
+% ---- research analysis ----
+\node[data] (d1) at (0,-6.2)    {\textbf{Materials:} video and screen recordings, system events, interviews, design journal};
+\node[data] (d2) at (3.75,-6.2) {\textbf{Analysis:} multimodal episode accounts read with interview themes};
+\node[data] (d3) at (7.5,-6.2)  {\textbf{Inquiry:} recognition, creative authority, authorship (RQ1--RQ3)};
+\draw[flow] (d1) -- (d2);
+\draw[flow] (d2) -- (d3);
+\begin{scope}[on background layer]
+  \node[draw=black!50, fill=white, rounded corners=3pt, inner xsep=3mm,
+        inner ysep=2.5mm, fit=(d1)(d2)(d3), yshift=1.5mm] (research) {};
+\end{scope}
+\node[band] at (research.north west) {Research analysis};
+
+\draw[doc] (creative.south -| d1.north) -- node[lab, right=1pt]{documented as} (research.north -| d1.north);
+\draw[doc] (research.north -| d3.north) -- node[lab, right=1pt]{informs later design} (creative.south -| d3.north);
+\end{tikzpicture}

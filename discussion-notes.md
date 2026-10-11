@@ -46,3 +46,6 @@
 - A single-authored writing sample of 12–20 pages.
 - My degree's official name at SFU.
 - Whether the formal proposal is due four or five months after comps (the two program documents differ).
+
+## 4. Updated after the second review (2026-10-11)
+The current list of open points for Rebecca is at the end of `CHANGELOG-review-2026-10-b.md` (project hosting, workshop scale and honoraria, whether attribution clashes with improvisers' conventions, framework emphasis, fields and committee, ethics position on hosted AI, citation year, manuscript status).
