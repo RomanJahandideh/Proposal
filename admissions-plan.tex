@@ -1,88 +1,102 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% admissions-plan.tex
-% PhD Proposed Plan of Study, York/TMU Communication & Culture.
-% York's instruction (How to Apply, accessed 2026-10-11): approximately
-% 500 words; describe the planned research area including objects of
-% study, potential methods, and compatibility with the program; discuss
-% preparation for doctoral study, especially if prior background appears
-% distant from communication and culture; may highlight relevant
-% accomplishments. No citation format is prescribed; this version uses
-% none, so it stands alone as an uploaded statement.
-% Standalone: compiles with pdfLaTeX, XeLaTeX or LuaLaTeX.
+% admissions-plan.tex -- PhD Proposed Plan of Study (application document)
+% York/TMU Communication & Culture, Fall 2027.
+%
+% York's instruction (How to Apply page, re-checked 2026-10-11):
+% approximately 500 words; "a clear and detailed description of the planned
+% research area by including the objects of study, potential methods, and
+% the compatibility of their scholarly interests with the program", plus
+% preparation for doctoral study where earlier background "appears distant"
+% from communication and culture; relevant accomplishments may be noted.
+% This is NOT the formal dissertation proposal (max. 3,500 words) that is
+% prepared after admission with a supervisory committee.
+%
+% Layout follows the York thesis template supplied by the author; no logo.
+% Compiles with pdfLaTeX, XeLaTeX or LuaLaTeX.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[11pt, a4paper]{article}
-\usepackage[top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.8cm]{geometry}
+\documentclass[letterpaper,11pt]{article}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{lmodern}
+  \usepackage{mathptmx}
+\else
+  \usepackage{fontspec}
+  \setmainfont{texgyretermes}[Extension=.otf, UprightFont=*-regular,
+    BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
 \fi
+\usepackage[top=25mm, bottom=25mm, left=25mm, right=25mm]{geometry}
+\usepackage{setspace}
 \usepackage[hidelinks]{hyperref}
-\renewcommand{\baselinestretch}{1.15}
-\setlength{\parskip}{4pt}
-\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\onehalfspacing
+\pagestyle{empty}
 
 \begin{document}
 
 \begin{center}
-{\large\textbf{Proposed Plan of Study}}\\[2pt]
-Roman Jahandideh --- PhD, Communication \& Culture (Fall 2027)\\
-\textit{Whose Contribution Counts? AI Mediation and Collective Authorship in Digital Improvisation}
+  {\bf\large Proposed Plan of Study}\\[2pt]
+  Roman Jahandideh --- PhD in Communication \& Culture, Fall 2027\\
+  \textit{Whose Contribution Counts? AI Mediation and Collective Authorship in Digital Improvisation}
 \end{center}
 
-Generative AI is entering collaborative creative tools. In these tools a model
-does more than produce content: it reinterprets what people contribute. When
-one participant's phrase becomes a shape, a sound or a change in a shared
-scene, others have to decide what that transformation means and whether it
-still belongs to the person who offered it. My doctoral research asks how
-participants, facilitators and a generative-AI interface together determine
-whether a person's contribution is acknowledged, transformed, taken up,
-contested and credited in a shared work. The question is about communication
-and cultural participation: how authorship and the right to refuse are
-recognised in collective production, and how interfaces and model defaults
-shape whose expression counts.
+Generative AI is entering the tools people use to make creative work
+together. In these tools a model reinterprets what participants contribute:
+one person's phrase becomes a sound or a moving form in a shared scene. Its
+outputs may then become more visible or influential than the contributions
+that prompted them. My doctoral research asks how participants, facilitators
+and a generative-AI interface shape whether a person's contribution is
+recognised, transformed, taken up, contested and credited in a collective
+work. The question concerns communication and cultural participation: whose
+interpretations gain authority, whose contributions remain recognisable, and
+how authorship is negotiated when a machine takes part in creative exchange.
 
 My objects of study are small-group digital improvisation workshops with
-adult improvising artists and creative-technology practitioners, and a
-research system I will build for them. The system is a shared Unity
-audiovisual environment. Participants submit short creative phrases, and an
-existing language model proposes bounded, reviewable transformations into
-spatial and sonic elements. Contributors or groups can accept, revise, reject
-or undo each proposal, and anyone can take part without AI.
+adult improvising artists and creative practitioners, and the shared
+audiovisual environment I will build for them. Participants contribute short
+phrases. An existing language model proposes transformations into light,
+form and sound, and contributors or groups can accept, revise, reject or
+undo them. Anyone can take part without using AI.
 
-I plan to use the program's research-creation option. The methods are:
-scoping interviews with improvisers and facilitators; co-design of the
-system's permissions with practitioners; repeated workshops comparing
-arrangements in which the contributor decides, the group decides, or a person
-rather than a model transforms the material; and follow-up interviews in which
-participants review episodes of their own sessions. I will analyse these
-episodes through interaction analysis and reflexive thematic analysis. My
-framework is Lucy Suchman's account of how agency is attributed and configured
-in human--machine relations, complemented by critical improvisation studies'
-treatment of co-creation as an ethical relation. I will treat system logs as
-records of events, not as evidence of intention, and examine my own role as
-designer and facilitator.
+I plan to use the program's research-creation option. The environment and
+the improvised works made with it form the creative component, and
+developing its rules and workshop scores is part of the inquiry. The methods
+are:
+\begin{itemize}\setlength{\itemsep}{0pt}
+  \item scoping interviews with improvisers and facilitators;
+  \item co-design with practitioners;
+  \item repeated workshops comparing contributor-led, group-led and
+        human-mediated arrangements;
+  \item reflection interviews in which participants review video of their
+        own sessions.
+\end{itemize}
+I will analyse selected episodes by linking talk, action and system records,
+and analyse interviews thematically. The framework is Lucy Suchman's account
+of how agency is figured at the human--machine interface, complemented by
+improvisation studies' attention to listening and response.
 
-The project fits the Technology in Practice area, with Media \& Culture as my
-minor. I hope to work with Dr.\ Rebecca Caines, whose research on improvisation
-as a methodology for creative technologies, and on generative AI as an
-improvisatory practice, aligns closely with this setting and approach.
+The project fits the Technology in Practice area, with Media \& Culture as a
+minor. I hope to work with Dr.\ Rebecca Caines, whose research on
+improvisation as a research methodology, on socially responsive creative
+technologies, and on generative AI in research-creation aligns closely with
+this setting and approach.
 
-My background may appear distant from communication and culture, so I want to
-explain how it prepares me. I hold a Bachelor of Architecture (Tabriz Islamic
-Art University) and a Master of Landscape Architecture (Istanbul Technical
-University), where I studied perception in virtual environments; that work was
-published at eCAADe 2023. I am completing a thesis-based master's degree in
-Interactive Arts and Technology at Simon Fraser University. There I have
-designed, built and evaluated multiplayer Unity systems, including an ambient
-interface that lets remote teammates perceive one another's state without
-emotion labels. That project led me to Science and Technology Studies and to
-the questions of interpretation, privacy and control that motivate this
-proposal. My two manuscripts from this work are under revision. I have
-conducted ethics-approved mixed-methods studies, taught animation and
-interactive media as a teaching assistant, and served on SFU's Senate Graduate
-Studies Committee. Doctoral study would let me ground this practice in
-communication and cultural theory.
+My background may appear distant from communication and culture, so I want
+to explain how it prepares me. I hold a Bachelor of Architecture from Tabriz
+Islamic Art University and a Master of Landscape Architecture from Istanbul
+Technical University. There I studied how people perceive virtual
+environments, work published at eCAADe 2023. I am completing a thesis-based
+master's degree in Interactive Arts and Technology at Simon Fraser
+University. In it I built and evaluated multiplayer Unity systems, including
+ambient cues that let remote teammates perceive one another's heart-rate
+state without emotion labels. Two manuscripts from this work have received
+revision requests from ACM venues. In that work, participants made their acceptance
+of the display conditional on controlling who could see it and when, which
+led me to the question of who controls how a shared system interprets people. I have conducted
+ethics-approved mixed-methods studies, worked as a teaching assistant in
+animation and interactive media, and served on SFU's Senate Graduate Studies
+Committee. Communication \& Culture would let me ground this practice in
+critical and cultural theory.
 
 \end{document}
