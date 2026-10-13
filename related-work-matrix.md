@@ -62,3 +62,26 @@ Prepared 2026-10-11 for `proposal-rebecca.tex` (second review, comment set for t
 - **Narrowed claim:** the combination is the extension. It brings together repeated group improvisation; a mediator that transforms one person's offer for others; explicit approval arrangements, including a human-mediated contrast; facilitation; and comparison of technical attribution with socially negotiated recognition over time.
 - **Not claimed:** first group-AI creative system; first study of AI authorship or improvisation; fairer participation; any demonstrated benefit.
 - **Change flagged:** Xu's C2 code ("unacknowledged contributions") led me to drop any implication that recognition in AI-supported groups is unstudied.
+
+---
+
+## Update, third review (2026-10-13)
+
+- **Suh et al. 2021 removed from Table 1.** The full text could not be obtained: the ACM DL PDF and full-HTML pages, ResearchGate and the OUCI mirror all returned 403 to automated access, and Google Research hosts no PDF. Only the abstract was read. The row and the prose citation were dropped, and the entry moved to `references-additional.bib`. No claims in the proposal rely on it.
+- **Xu et al. row re-worded.** The earlier text said "trust and accountability set aside". It now reads: "Authors note trust and accountability received less attention". This follows their §7 limitation: "an analytical approach that emphasised information flow over social or organisational aspects like trust or accountability."
+- **Rows re-verified against the full texts:**
+  - Xu: 18 students observed in six groups of three; ~45-minute task; 9 separate interviews; a shared ChatGPT-4 interface.
+  - Trajkova: 24 dance students; AI proposed; recommendations untested (§7).
+  - Mathewson & Mirowski: a development report on implemented chatbot performers.
+  - Epstein: vignette experiments on MTurk; AI described in the vignettes, not used.
+  - Caines 2026: research-creation study of the author's own course design.
+- **Cultural positioning added:**
+  - **Jenkins et al. 2006** (MacArthur occasional paper, full text): the participatory-culture definition on p. 3.
+  - **Chalk 2022** (full-text sections, abstract and Ch. 3): non-economic values in improvised play as cultural production.
+  - **Neville 2026** (introduction pp. 1–3): roll-out of technology into practices outsiders misrecognise as non-technical.
+  - **Considered but not cited:** Becker 1974 ("Art as Collective Action", ASR 39(6)) had no accessible full text or abstract. Sawyer & DeZutter 2009 had no accessible full text.
+- **Bias sources re-scoped:**
+  - Tao: five OpenAI GPT models compared with World Values Survey data.
+  - Naous: 16 multilingual and Arabic models, Arabic prompts.
+  - Liu: the 2022 Fig-QA benchmark, models of that time including GPT-3.
+  - Bianchi: Stable Diffusion and DALL·E.
