@@ -495,3 +495,21 @@ All [V] from abstracts or full text, as noted.
 | 2026-10-11 | Crossref DOI checks of every journal/proceedings entry | api.crossref.org | Abstracts unavailable for some ACM items (ACM DL returns 403) |
 | 2026-10-11 | Your PDFs and CVs | local paths in §0 and §4 | The two filenames you gave were not found; the closest versions were used |
 | 2026-10-11 | Tectonic 0.17.0 (session scratch folder only) used to compile | github.com/tectonic-typesetting | Overleaf may use a different engine and TeX Live version |
+
+---
+
+## Requirements re-check, 2026-10-13
+
+| Source | What it says | Applies to you? |
+|---|---|---|
+| York ComCult *How to Apply* page | "A statement of interest (MA applicants) or proposed plan of study (doctoral applicants) (both approximately 500 words)". The writing sample must be "single-authored and 12-20 pages". Three academic references. | **Yes.** You apply to York, where Rebecca is. |
+| York ComCult *PhD* page (FAQ) | "students must directly apply to either York or Toronto Metropolitan University". Also: "we have limited capacity to train students in media making." | Yes. Choose York. Research-creation skills are expected on entry. |
+| York Future Students program page | "Statement of interest (or proposed plan of study) required" (no length given). | Yes (consistent with the above). |
+| York FGS general *How to Apply* page | Statement of Interest "in 500 to 1,000 words", but "Required documents and submission deadlines differ by program". | The program page's ~500 words governs. |
+| TMU ComCult admissions page | Statement of interest "500-800 words"; writing sample max 10 pages double-spaced; CV max 4 pages; two references. | **No**, unless you apply through TMU instead. |
+| ComCult Dissertation Regulations (rev. May 2016) | Formal proposal "8 - 10 pages + bibliography (maximum = 3500 words)", due within five months of passing the qualifying exam. | Later, after admission and comps. |
+| 2024 York ComCult PhD brochure (yorku.ca/gradstudies/wp-content/.../2024_COMMUNICATION-AND-CULTURE_Final_PhD.pdf) | Returned 404; not read. | Unknown. |
+
+**Status:**
+- `admissions-plan.tex` is now 473 words of body text (498 including the title block). This is the only document you submit.
+- `proposal-rebecca.tex` (3,279 words) is for discussion with Rebecca only.
