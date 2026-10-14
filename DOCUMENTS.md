@@ -4,9 +4,9 @@ All paths are relative to this folder (`Desktop/CV/Proposal`). Edit the `.tex` s
 
 | # | Document | For whom / when | Source | PDF | Length | Limit |
 |---|---|---|---|---|---|---|
-| A | **Proposed Plan of Study** | Upload with the York application (priority deadline 15 Jan 2027) | `admissions-plan.tex` | `pdf/admissions-plan.pdf` | 473 words of body text (498 with title block), 2 pages | "approximately 500 words" (York How to Apply) |
-| B | **Exploratory research proposal** | Send to Dr. Rebecca Caines before applying; not an application document | `proposal-rebecca.tex` (compiled via `main.tex`) | `pdf/proposal-rebecca.pdf` | 3,279 words including table and figure, 8 pages + bibliography | none set; kept under the formal-proposal ceiling |
-| C | **Formal dissertation proposal (advance draft)** | Only after admission, within five months of passing the Qualifying Examination, with the program's ethics form | `formal-proposal-draft.tex` + `formal-proposal-bibliography.tex` | `pdf/formal-proposal-draft.pdf` | 3,056 words, 8 pages + bibliography | "8 - 10 pages + bibliography (maximum = 3500 words)" (Dissertation Regulations, rev. May 2016) |
+| A | **Proposed Plan of Study** | Upload with the York application (priority deadline 15 Jan 2027) | `admissions-plan.tex` | `pdf/admissions-plan.pdf` | 474 words of body text (499 with title block), 2 pages | "approximately 500 words" (York How to Apply) |
+| B | **Exploratory research proposal** | Send to Dr. Rebecca Caines before applying; not an application document | `proposal-rebecca.tex` (compiled via `main.tex`) | `pdf/proposal-rebecca.pdf` | 3,440 words including table and figure, 8 pages + bibliography | none set; kept under the formal-proposal ceiling |
+| C | **Formal dissertation proposal (advance draft)** | Only after admission, within five months of passing the Qualifying Examination, with the program's ethics form | `formal-proposal-draft.tex` + `formal-proposal-bibliography.tex` | `pdf/formal-proposal-draft.pdf` | 3,257 words, 8 pages + bibliography | "8 - 10 pages + bibliography (maximum = 3500 words)" (Dissertation Regulations, rev. May 2016) |
 
 ## Notes
 
