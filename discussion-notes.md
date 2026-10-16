@@ -14,7 +14,7 @@
 
 **If asked "what do you already have?"** Unity and C#, a working networked multiplayer system, a wearable-to-engine pipeline, two mixed-methods studies with ethics approval, and some experience calling LLM APIs with structured outputs. I'm not an ML researcher, and the design doesn't require one.
 
-**If asked about the papers' status.** Both are submitted and under revision; neither is accepted. I can share the current drafts. I'm also fixing inconsistencies I found in the BioTerrarium paper before resubmitting it, so please don't rely on its numbers yet.
+**If asked about the papers' status.** The teammate paper is accepted at ACM ISS 2026 (Companion Proceedings, Turin, November 2026; doi:10.1145/3845796.3859311). The BioTerrarium paper is under revision. I can share the drafts. I'm also fixing inconsistencies I found in the BioTerrarium paper before resubmitting it, so please don't rely on its numbers yet.
 
 ## 2. Questions for Rebecca
 
@@ -41,7 +41,7 @@
 14. What do you need from me before you'd consider a support letter, and by when, given the January 15, 2027 priority deadline?
 
 ## 3. Things I need to confirm myself
-- Exact status wording for both manuscripts.
+- Exact status wording for the BioTerrarium manuscript. (Teammate paper: accepted at ACM ISS 2026, confirmed 2026-10-15. Check the "Romman" spelling on the ACM proof.)
 - Whether the BioTerrarium study was run as described. The July draft is written in the future tense.
 - A single-authored writing sample of 12–20 pages.
 - My degree's official name at SFU.
