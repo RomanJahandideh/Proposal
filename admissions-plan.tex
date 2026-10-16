@@ -27,6 +27,9 @@
 \fi
 \usepackage[top=25mm, bottom=25mm, left=25mm, right=25mm]{geometry}
 \usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
 \usepackage[hidelinks]{hyperref}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
@@ -42,59 +45,63 @@
 \end{center}
 
 In collaborative creative tools, a generative model reinterprets what
-participants contribute: one person's phrase becomes a sound or a moving form
-in a shared scene, and its outputs may become more visible than the
-contributions that prompted them. My doctoral research asks how participants, facilitators
-and a generative-AI interface shape whether a person's contribution is
-recognised, carries creative authority, and is credited in a collective work.
-I will examine whether technical attribution, the system's
-record of who supplied what, and social recognition among collaborators come
-apart. This is a question of AI-mediated communication. I study AI not as
-a creative partner but as a medium that translates one
-person's offer to others, and ask whose interpretations gain authority and
-how authorship is negotiated.
+participants contribute: one person's phrase becomes a sound or a moving form,
+and its output may become more visible than the
+contribution that prompted it. My doctoral research asks how participants,
+facilitators and a generative-AI interface shape whether a person's
+contribution is recognised, carries creative authority, and is credited in a
+collective work. This is a question of AI-mediated communication: I study AI
+not as a creative partner but as a medium that translates one person's offer
+to others, and ask whether the system's record of who supplied what matches
+how collaborators recognise one another. Table~1 shows where this extends
+the closest studies.
+
+\begin{center}
+\footnotesize
+\setstretch{1.0}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.9cm}
+  >{\raggedright\arraybackslash}X
+  >{\raggedright\arraybackslash}X@{}}
+\multicolumn{3}{@{}l}{\textbf{Table 1.} Closest related work, as reported in each source.}\\[2pt]
+\toprule
+Study & AI's role & What this project adds \\
+\midrule
+Xu et al.\ 2026 (CHI) & Shared ChatGPT in one group task & Improvisation; credit across sessions \\
+Trajkova et al.\ 2024 (CHI) & Proposed AI dance partner, not yet tested & An implemented mediator in group work \\
+Epstein et al.\ 2020 (\textit{iScience}) & AI art described to online observers & Credit claimed by the people making the work \\
+Caines 2026 (\textit{AJSE}) & GenAI tools in course design & Recognition of individual contributions \\
+\bottomrule
+\end{tabularx}
+\end{center}
 
 My objects of study are small-group digital improvisation workshops with
-adult improvising artists and creative practitioners, and the shared
-audiovisual environment I will build for them. Participants contribute short
-phrases. An existing language model proposes transformations into light,
-form and sound, and contributors or groups can accept, revise, reject or
-undo them. Anyone can take part without using AI.
+adult improvisers, and the shared audiovisual environment I will build. A language model proposes transformations
+of participants' phrases into light, form and sound, which contributors or
+groups accept, revise or refuse. Using AI is always optional.
 
-I plan to use the program's research-creation option. The environment, the
-improvised works made with it, and a set of improvisation scores tested in
-the workshops form the creative component. The methods are:
-\begin{itemize}\setlength{\itemsep}{0pt}
-  \item scoping interviews with improvisers and facilitators;
-  \item co-design with practitioners;
-  \item repeated workshops (provisionally three small groups, four sessions
-        each) comparing contributor-led, group-led and human-mediated
-        arrangements;
-  \item reflection interviews in which participants review video of their
-        own sessions.
-\end{itemize}
-I will analyse episodes through talk, action and system records, and
-interviews thematically. The framework is Lucy Suchman's account
-of how agency is figured at the human--machine interface, complemented by
-improvisation studies' attention to listening and response.
+Under the research-creation option, the environment, improvised works and
+workshop-tested scores form the creative component. Methods are scoping interviews, co-design with practitioners,
+repeated workshops (provisionally three groups, four sessions each)
+comparing contributor-led, group-led and human-mediated arrangements, and
+video-based reflection interviews. The framework is Lucy Suchman's account
+of how agency is figured at the human--machine interface.
 
 The project fits Technology in Practice, with Media \& Culture as a minor. I
-hope to work with Dr.\ Rebecca Caines, whose research on improvisation as a
-research methodology, socially responsive creative technologies, and
-generative AI as a critical improvisation practice fits this approach.
+hope to work with Dr.\ Rebecca Caines, whose research on improvisation as
+methodology, socially responsive creative technologies, and generative AI as
+a critical improvisation practice fits this approach.
 
-My background may appear distant from communication and culture. I hold a Bachelor of Architecture from Tabriz
-Islamic Art University and a Master of Landscape Architecture from Istanbul
-Technical University. There I studied perception of virtual
-environments, work published at eCAADe 2023. I am completing a thesis-based
-master's degree in Interactive Arts and Technology at Simon Fraser
-University, where I built and tested multiplayer Unity systems, including
-ambient cues that let remote teammates perceive one another's heart-rate
-state without emotion labels (ACM ISS 2026 poster; another paper under
-revision). Participants made acceptance of that display conditional on
-controlling who could see it, which led me to ask who controls how a shared
-system interprets people. I have conducted ethics-approved mixed-methods
-studies, worked as a teaching assistant in animation and interactive media,
-and served on SFU's Senate Graduate Studies Committee.
+I come to communication and culture through design. Trained in architecture
+(Tabriz Islamic Art University) and landscape architecture (Istanbul
+Technical University), I have always been curious about what my designs do
+to the people and communities who live with them. At Istanbul I studied
+perception of virtual environments (eCAADe 2023). In my thesis-based
+master's in Interactive Arts and Technology at Simon Fraser University, I
+built multiplayer systems that let remote teammates sense one another's
+heart-rate state without emotion labels, accepted at ACM ISS 2026.
+Participants accepted that display only if they controlled who saw it.
+That finding moved my question from what a design does to people to who
+controls how a shared system interprets them. I have run ethics-approved
+studies, worked as a teaching assistant, and served on SFU's Senate Graduate Studies Committee.
 
 \end{document}
