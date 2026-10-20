@@ -2,6 +2,10 @@
 % proposal-rebecca.tex -- exploratory PhD proposal for discussion with
 % Dr. Rebecca Caines (York/TMU Communication & Culture), revised after the
 % October 2026 reviews (see CHANGELOG-review-2026-10.md and -b.md).
+% 2026-10-20: conceptual redevelopment in response to Dr. Caines's comments
+% (see revision_audit.md). Body text lives in sections/*.tex, shared with
+% formal-proposal-draft.tex; this file supplies headings, the related-work
+% table (sections/relatedwork.tex), the figure, chapters and timeline.
 %
 % Layout follows the York thesis template supplied by the author
 % (letter paper, 11 pt, 25 mm margins, one-and-a-half spacing, no
@@ -48,7 +52,7 @@
 \begin{document}
 \begin{center}
   {\bf\Large Whose Contribution Counts?}\\[4pt]
-  {\bf\large AI Mediation and Collective Authorship in Digital Improvisation}\\[12pt]
+  {\bf\large Generative AI, Cultural Participation and Collective Authorship in Research-Creation}\\[12pt]
   {\bf Roman Jahandideh}\\[3pt]
   Exploratory proposal for discussion with Dr.\ Rebecca Caines\\
   Joint Graduate Program in Communication \& Culture, York University\\
@@ -57,399 +61,79 @@
 \end{center}
 
 \begin{quote}
-\small\textit{The research setting and partnerships will be developed in
-consultation with the prospective supervisor.}
+\small\textit{Revised in response to Dr.\ Caines's comments. Setting, venue
+and any link to her projects remain to be developed with her.}
 \end{quote}
 
-\section{Problem and cultural stakes}
+\section*{Summary}
+\input{sections/summary}
 
-In collaborative creative tools, a generative model does more than produce
-content: it \emph{reinterprets} what people contribute. Someone types a
-phrase, and a moment later it has become a sound or a moving form in a shared
-scene. The group then has to decide what that transformation means, and
-whether it still belongs to the person who offered it.
+\section{The problem and its wider stakes}
+\input{sections/problem}
 
-This is a communication problem. \citet{hancock2020} define AI-mediated
-communication as ``interpersonal communication in which an intelligent agent
-operates on behalf of a communicator by modifying, augmenting, or generating
-messages to accomplish communication goals,'' with examples such as smart
-replies and auto-completion. In a shared creative work, the ``message'' is an
-artistic offer, its audience is the rest of the group, and the AI's
-modification becomes part of a collective artwork. When AI translates
-contributions in this way, its outputs may become more visible or influential
-than the contributions that prompted them, a possibility to investigate
-rather than an established effect. This raises a cultural question about
-whose interpretations gain authority, whose contributions remain
-recognisable, and how disagreement is negotiated. Creative platforms
-increasingly record who supplied what; this project asks whether such records
-settle questions of credit.
+\section{Practice and position}\label{sec:practice}
+\input{sections/position}
 
-What is new is the object of study. The closest studies
-(Table~\ref{tab:related}) mostly position AI as a partner, performer or group
-resource that people create \emph{with}. This project studies AI as a \emph{medium}
-that people create \emph{through}, a translator between collaborators whose
-reinterpretations they must accept, revise or refuse, and asks what that does
-to recognition and authorship over repeated collective work.
+\subsection*{Artistic field}
+\input{sections/artists}
 
-Improvisation is a good place to ask. Improvisers already have conventions for
-listening to, building on and refusing one another's offers, and improvisation
-has been argued to be a research method grounded in risk, active listening and
-collaborative response \citep{caines2020fragile}. A system that transforms
-and labels offers enters those conventions, and may quietly change them.
-
-\section{Related work}
-
-Existing research examines human--AI co-creation, collective decision-making
-and the attribution of creative credit; this project investigates their
-intersection in small-group digital improvisation. Table~\ref{tab:related}
-compares the closest studies.
-
-\begin{table}[ht]
-\centering
-\footnotesize
-\setstretch{1.0}
-\caption{Closest related work and the proposed extension, as reported in each source.}
-\label{tab:related}
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{1.75cm}
-  >{\raggedright\arraybackslash}X
-  >{\raggedright\arraybackslash}p{2.0cm}
-  >{\raggedright\arraybackslash}X
-  >{\raggedright\arraybackslash}X@{}}
-\toprule
-Study & Setting, method, duration & AI role & Focus and relevant finding & Extension in this project \\
-\midrule
-\citet{xu2026} & 18 students in six groups of three, one $\sim$45-min design task, observed; 9 separate interviews & Implemented: one shared ChatGPT interface & Information flow, roles, negotiation; AI output became a negotiable part of decisions. Authors note trust and accountability received less attention & Improvisation; one person's transformed material; credit across sessions \\
-\citet{trajkova2024} & 24 dance students; focus groups on partnered improvisation & Proposed AI dance partner; recommendations not yet tested & How improvisers lead, follow, introduce and value ideas & An implemented mediator in group work \\
-\citet{mathewson2017} & Live improvised theatre; development report & Implemented chatbot performers & Successes and failures of performing alongside AI & AI transforming other people's offers \\
-\citet{epstein2020} & Online vignette experiments & Described, not used & Framing AI as an agent shifted responsibility away from the artist & Credit claimed in situ by the people making the work \\
-\citet{caines2026steaming} & Research-creation study of the author's course design & Web GenAI tools in teaching & Ethics, access, improvisatory skills & Contribution-level recognition in group improvisation \\
-\midrule
-Proposed study (planned) & Three groups, four workshops each; episode analysis, interviews & Language-model mediator; human-mediated contrast & Questions: how recognition, authority and authorship form & --- \\
-\bottomrule
-\end{tabularx}
-\end{table}
-
-Notably, \citet{xu2026} coded ``unacknowledged contributions'' as one kind
-of breakdown. Contestability, developed mainly for high-stakes decisions such
-as hiring or sentencing \citep{lyons2021}, offers a related vocabulary for
-challenging a system.
-
-Communication scholarship offers two vocabularies. Human--machine
-communication asks how people make sense of AI as a communicator in its own
-right \citep{guzman2020}; AI-mediated communication asks what happens when AI
-alters messages between people \citep{hancock2020}. This project draws on
-both, since participants may treat the system as a partner in one moment and
-as a channel distorting a colleague's offer in the next. Cultural scholarship
-explains why recognition matters.
-\citet[p.~3]{jenkins2006} define a participatory culture as one in which
-``members believe their contributions matter, and feel some degree of social
-connection with one another''; this study asks what happens to that belief
-when a model, rather than a peer, first responds to a contribution.
-\citet{chalk2022} treats Actual Play, improvised tabletop play performed as
-media, as cultural production in which few producers earn a living and
-non-economic values such as participation, enjoyment and community help
-motivate the work. Recognition is thus part of what participants receive for
-their labour. \citet{neville2026} shows how technologies are rolled out into
-settings whose practices outsiders misrecognise as non-technical;
-improvisers' conventions for crediting and reusing offers are such practices,
-and my system's attribution rules could override them. I take from these
-works the stakes of recognition, and question whether a system's record of
-contribution can stand in for it.
-
-\section{Key terms and research questions}
-
-Three working definitions organise the study. \textbf{Recognition}: a
-contribution is noticed or acknowledged as meaningful. \textbf{Creative
-authority}: a person's interpretation or decision carries influence over what
-happens next. \textbf{Authorship}: participants associate ownership, credit
-or responsibility with the work, as felt ownership, public attribution and
-creative responsibility. Legal ownership and copyright are outside the scope
-of this study. These can come apart: a contributor may be credited while the
-group reshapes the material regardless of their view (credit without
-influence), and a facilitator, interpreter or I as designer may shape the
-work uncredited (influence without credit). The definitions are sensitising
-concepts, not fixed categories, and listening, facilitation, silence and
-refusal count as participation.
-
-\textbf{Central question.} In collaborative digital improvisation, how do
-participants, facilitators and a generative-AI interface shape whether a
-person's contribution is recognised, carries creative authority, and is
-credited in the shared work?
-
-\begin{enumerate}[label=\textbf{RQ\arabic*.}, leftmargin=*]
-  \item \emph{Recognition.} How do participants notice, interpret and respond
-        to differences between what they offered and how it was transformed?
-  \item \emph{Authority.} Through which practices, including acceptance,
-        revision, refusal, facilitation and silence, do contributors and
-        groups gain or lose influence over transformed material, and how do
-        interface permissions shape those practices?
-  \item \emph{Authorship.} When and why do the system's technical attribution
-        and participants' accounts of ownership, credit and responsibility
-        diverge?
-\end{enumerate}
+\section{Research questions}
+\input{sections/questions}
 
 \section{Theoretical framework}
+\input{sections/framework}
 
-My primary framework is Lucy Suchman's study of human--machine
-reconfiguration \citep{suchman2007}, which examines how agencies are figured
-at the interface and how humans and machines come to be treated as similar or
-different in practice. On this view, whether a transformed element belongs to
-its contributor, to the group or to the system is worked out in interaction.
+\section{Related work}
+\input{sections/relatedwork}
 
-In the illustrative episode in Section~\ref{sec:method}, the system records
-that an amber pulse came from one participant's phrase, but the pulse also
-depends on the model's reading, my asset library and the approval rule. When
-the contributor refuses a request to brighten it, they enact an authority the
-interface granted, which the group can accept or contest. The question shifts
-from ``who really made the pulse?'' to how agency is distributed and
-attributed in that moment: how participants attribute agency in talk and
-action (``the AI did that'', ``that one is mine''), how rules, model defaults,
-facilitation and my design decisions make some actions easy and others
-difficult, and who is held responsible when a transformation misrepresents
-someone. Improvisation studies adds a limited lens on how offers are taken up, ignored
-or refused \citep{caines2020fragile}. These concepts tell me where to look,
-not what I will find.
-
-\section{Research-creation methodology}\label{sec:method}
-
-The project follows the program's research-creation option, a creative work
-with a 150--200-page written dissertation \citep{comcult_rc}. It is closest
-to what \citet{chapman2012} call ``research-from-creation'': making the work
-generates material for understanding how participants engage with it.
-
-\textbf{The creative work.} The creative component will comprise the shared
-audiovisual environment and the improvised works produced through it.
-Developing and revising its expressive possibilities, interaction rules and
-workshop scores will form part of the inquiry into how creative authority is
-distributed. Participants build and perform short projected improvisations of
-light, form and sound, then discuss them; each rule the environment embodies
-is a proposition about collective authorship that they can test, resist or
-rewrite. In an illustrative session, four
-improvisers receive a score: build the weather of a city none of them has
-visited. One types ``the bus that never comes.'' The system proposes a slow
-amber pulse at the edge of the space with a low drone, with the generated
-interpretation ``waiting as a distant repeating light.'' The contributor
-accepts it. Later another participant wants the pulse brighter; the
-contributor declines, and the facilitator asks the group how to proceed.
-The scores are a creative output in their own right: a revised set of
-improvisation scores for AI-mediated group work, credited to the groups that
-shaped them with their consent, which other practitioners can use, adapt or
-refuse. Because
-the creative work must be available for the committee to assess
-\citep{comcult_rc}, it will be documented through the executable environment,
-these scores, selected consented recordings, and an annotated account of
-design revisions. These materials will allow the committee to examine how the
-creative process contributes to the dissertation's argument.
-
-\textbf{Ownership and reuse.} Recording origins and giving contributors
-approval rights could introduce individual ownership where improvisers treat
-accepted offers as shared. Scoping interviews will investigate how
-practitioners already understand ownership and reuse of improvised offers,
-including whether accepted material becomes the group's and who decides that.
-Co-design will examine whether contributor approval and visible attribution
-support their practices or introduce individualised ownership assumptions
-that participants do not share. One option to test is a way to ``release''
-accepted material to the group.
+\section{Research-creation design}\label{sec:design}
+\input{sections/design}
 
 \begin{figure}[ht]
 \centering
 \setstretch{1.0}
 \input{figures/study-overview}
-\caption{Proposed study (planned, not yet conducted). Solid arrows show a
-workshop's creative cycle and its decisions; dashed arrows show conditions
-shaping transformation and negotiation; dotted arrows link activity and
-analysis. Recognition and authorship are interpreted from the materials, not
-produced by system events.}
+\caption{Proposed research-creation design (planned, not yet conducted).
+Solid arrows show the sequence of phases, dashed arrows feedback that revises
+earlier decisions, and dotted arrows evidence moving into interpretation. The
+grey bands run across every phase.}
 \label{fig:overview}
 \end{figure}
 
-\textbf{Phases and provisional scale.} Scoping interviews with improvisers and
-facilitators come first. Co-design sessions with a few practitioners then set
-the input form, the limits of transformation, the starting approval and
-attribution rules, and accessibility provisions; these practitioners will not
-join the workshop groups. A provisional design would then involve three
-groups of three to five adult practitioners, each attending four workshops of
-approximately 90--120 minutes, with recruitment seeking variation in
-improvisational and creative-technology experience. I would aim to include
-one existing ensemble and record prior relationships. Each participant then
-has a reflection interview reviewing video of their own sessions. The final
-design would be refined through scoping, access negotiations and ethics
-review.
-
-\textbf{Arrangements and what they support.} The first workshop uses only the
-manual path, and the group writes down the procedure it will use when the
-group decides. Each later workshop uses one arrangement from
-Figure~\ref{fig:overview}, in a different order for each group, so each group
-meets each arrangement once. What repeats is the group's evolving
-collaboration across sessions, not trials within an arrangement. The
-arrangements are situated contrasts whose effects cannot be separated from
-order, prior relationships and emerging norms; I treat these as contextual
-evidence. The human-mediated arrangement keeps contributor approval but also
-changes timing and social relationships, so the study will not isolate a
-causal effect of AI.
-
-\textbf{Negotiating the rules.} The co-designed starting rules define each
-arrangement. During a session, participants may negotiate how they apply
-them, for instance by releasing material or overruling an approval;
-substantial system changes are made only between sessions. Each rule version,
-its reason and its consequences are recorded in the design journal. A changed
-arrangement is not treated as equivalent to its earlier version, and the
-change itself is analysed as evidence of negotiated authority.
-
-\section{The system and the place of AI}
-
-A participant submits a short text phrase. An existing language model
-returns one \emph{proposal} drawn from a curated library of forms, light,
-colour, particle ``weather'', sound and text, with a one-line \emph{generated
-interpretation} that is model output, not an explanation of why the model
-produced the transformation. Contributors or groups can accept, edit, reject,
-request another proposal or undo, and a manual path to the same library is
-always open. Generative AI is included because
-machine-mediated reinterpretation is the object of study; the project does
-not presume that AI improves improvisation. The model does not decide whether anything enters the work, who is credited
-or what is removed, and makes no inferences about participants' emotions or
-behaviour.
-
-Neither the model nor the library is a neutral container. Documented
-challenges include stereotyped images from text-to-image systems
-\citep{bianchi2023}, value profiles in five GPT models resembling
-English-speaking and Protestant European survey responses \citep{tao2024},
-and a preference for Western-associated entities among multilingual and
-Arabic models prompted in Arabic \citep{naous2024}. A 2022 benchmark also
-found models of that time below human accuracy on paired figurative phrases
-\citep{liu2022}. These results concern specific models and tasks, and I will
-not benchmark models. I will record how metaphor, idiom and culturally
-specific phrases are read when participants use them, discuss misreadings
-with them, and examine how my asset choices privilege particular
-associations.
-
-\textbf{Feasibility.} Unity applies only permitted, bounded actions; model
-output is never run as code. I will first test a local open-weight model,
-otherwise an approved hosted service receiving only the phrase. No model is
-trained.
-
-\section{Case-study context and access}
-
-Subject to discussion with Dr.\ Caines, these workshops could examine how
-improvisation helps participants question and reshape the authority built
-into creative technologies, a question close to the title of her SSHRC
-Insight project, \emph{Interfacing, Playtesting, Resetting:
-Reframing Technology Use Through Improvised Creative Technologies}
-\citep{yfile2026sshrc}. Any relationship to that project would be determined
-together; I do not assume it includes this study or any AI component. Otherwise I would use open calls to Toronto improvisation,
-theatre and sound communities and to AMPD students, excluding anyone I teach.
-As in \citeauthor{chalk2022}'s \citeyearpar{chalk2022} study, recruitment
-would be iterative, checking whose practices are missing after the first
-group and reporting remaining gaps. I will
-not work with disability-focused or Indigenous communities without
-established partnerships, community governance and relevant expertise.
-
 \section{Analysis}
+\input{sections/analysis}
 
-I will construct multimodal accounts of selected episodes, linking video of
-participants' words and actions with screen recordings and the system's log.
-An episode runs from a contribution, through its transformation and the
-group's response, to the next creative action. Episode selection will include
-routine acceptance and non-response as well as explicit disagreement. I will
-document selection decisions and compare episodes across groups, arrangements
-and stages of collaboration, including cases that challenge emerging
-interpretations. The episode analysis adapts the video microethnography
-\citet{mcarthur2015} used to study interface interactions; reflection
-interviews are analysed through reflexive thematic analysis \citep{braun2019},
-whose themes contextualise an episode without settling what it meant. System
-records show what happened in the software, not intention. I will keep an analytic trail rather than seek inter-rater agreement,
-and the design journal records how my choices as designer and facilitator
-shape what participants can do.
+\section{Ethics, accessibility and access}
+\input{sections/ethics}
 
-\section{Ethics, consent and accessibility}
+\input{sections/access}
 
-Consent will be specific, ongoing and revisable
-\citep{im2021,strengers2021}, given separately for recording, AI processing,
-use of recordings in the examination, and public dissemination; public
-sharing is optional. Provenance will support identifying and, where feasible,
-removing attributable contributions. Participants will agree on withdrawal
-procedures and deadlines before the workshops, including the limits of
-removing contributions from jointly developed or publicly disseminated works.
-Credit is agreed with participants, whose time is paid; data are minimised,
-pseudonymised and kept for stated periods. Full participation without AI is a
-design commitment the workshops will test, through reduced motion, resizable
-text, alternatives to sound-only information, facilitator-operated controls
-and the manual path. Participation alone does not make a project equitable
-\citep{birhane2022}.
+\section{Contributions}
+\input{sections/contributions}
 
-\section{Intended contribution}
+\section{Program and supervisor fit}
+\input{sections/fit}
 
-The project investigates whether technical attribution and social recognition
-can diverge in collective creative work. A provenance log may record who
-supplied a phrase while collaborators treat the transformed material as
-another person's, the group's, or nobody's. The study will examine how
-contributors gain or lose authority over transformed material, and how
-interface permissions, facilitation and group conventions shape that
-process. Its intended contribution is an explanation of these relationships,
-rather than a general claim that more individual control produces fairer
-collaboration. The evidence may help explain credit without influence,
-influence without credit, how accepted material becomes collective, and when
-provenance fails to resolve authorship disputes; these are possibilities, not
-predicted findings. For communication studies, the project would extend
-AI-mediated communication from messages between individuals to collective
-creative production, where the mediated ``message'' becomes shared work. For
-improvisation practice, it would offer scores, tested in the workshops, for
-working with, around and against AI mediation. The resulting concepts may help interpret other platforms
-that rely on attribution records, without establishing how those platforms
-behave. If AI proves unnecessary in some arrangements, the contribution would
-lie in explaining when and why.
+\section{Provisional chapters and timeline}
 
-\section{Relationship to my master's research}
-
-My master's research at Simon Fraser University asks how interfaces make a
-person's state perceptible to others, through label-free heart-rate cues for
-remote teammates in a cooperative Unity game and a Unity environment that
-responds to the player's heart rate. The teammate study is accepted at ACM
-ISS 2026 \citep{jahandideh_teammate_ms},
-and the second manuscript is under revision following peer review
-\citep{jahandideh_bioterrarium_ms}. In the teammate
-study, participants tied their willingness to use the cue to control over it,
-asking for opt-in sharing, an immediate off switch and separate permissions
-\citep{jahandideh_teammate_ms}. As the designer, I also noticed that the
-classification behind the display still sorted people into evaluative
-categories they never saw. Both lead to this PhD's question, who controls how
-a shared system interprets people, now asked of deliberate creative
-contributions rather than bodily signals.
-
-\section{Provisional chapter structure}
-
-(1)~Introduction; (2)~literature and framework; (3)~methodology:
-research-creation, workshops and reflexivity; (4)~the environment as a
-creative work and the ownership its design assumes; (5)~recognition and
-authority; (6)~authorship, attribution and responsibility; (7)~conclusion.
-
-\section{Provisional timeline (full-time)}
+\textbf{Chapters.} (1) GenAI and cultural participation; (2) participation,
+mediation and collective production; (3) methodology: research-creation,
+studio, workshops and reflexivity; (4) the studio inquiry and the tool
+ecology as cultural document; (5) translation, recognition and refusal in the
+workshops; (6) credit, responsibility and the public artwork; (7) protocols
+and wider stakes.
 
 \begin{center}
 \small
 \begin{tabularx}{\linewidth}{@{}lX@{}}
 \toprule
-Year 1 (2027--28) & Courses (CMCT 7000, 7200, 7005 in the current degree requirements, and electives; offerings may change); literature review; ethics preparation; tests with a local model. \\
-Year 2 (2028--29) & Comprehensive examinations; formal proposal (maximum 3,500 words) with a supervisory committee \citep{york_dissregs}; ethics approval; scoping interviews. \\
-Year 3 (2029--30) & Co-design; workshops with three groups; reflection interviews; analysis. \\
-Year 4 (2030--31) & Analysis; documentation of the creative work; writing and defence. Year 5 in reserve. \\
+Year 1 (2027--28) & Courses; literature review; Phase 1 studio inquiry begins. \\
+Year 2 (2028--29) & Comprehensive examinations; formal proposal and ethics approval \citep{york_dissregs}; Phase 2 pilots. \\
+Year 3 (2029--30) & Phase 3 workshops with three cohorts; Phase 4 focus groups; analysis. \\
+Year 4 (2030--31) & Phase 5 co-creation and proposed exhibition; writing and defence. Year 5 in reserve. \\
 \bottomrule
 \end{tabularx}
 \end{center}
-
-\section{Program and supervisor fit}
-
-The project belongs to Technology in Practice, with Media \& Culture as a
-minor. Dr.\ Caines's work on improvisation as a research methodology
-\citep{caines2020fragile} and socially responsive creative technologies
-\citep{caines2023consultation} speaks to its setting and methods. In her
-research-creation study of generative AI in classrooms, she came to see her
-work with AI tools ``as a kind of critical improvisation practice,'' one
-involving ``a deep responsibility to how this material is utilized'' and ``a
-constant cycle of navigating power, adaptation, surprise, failure, and
-creation'' \citep[p.~193]{caines2026steaming}. That study centred on course
-design; this project asks how that responsibility and power are negotiated
-among improvisers when the material is one another's contributions.
 
 \bibliographystyle{plainnat}
 \bibliography{references}

@@ -1,74 +1,46 @@
-% figures/study-overview.tex -- schematic of the proposed study (TikZ).
+% figures/study-overview.tex -- research-creation design schematic (TikZ).
+% Redesigned 2026-10-20: replaces the earlier technical pipeline diagram.
 % Included by proposal-rebecca.tex and by figures/study-overview-standalone.tex.
 % Requires: \usetikzlibrary{arrows.meta, positioning, fit, backgrounds}
-% Fixed font sizes so the figure renders identically in 10pt and 11pt documents.
+% Fixed font sizes so the figure renders identically in 11pt and 12pt documents.
 % Grayscale-safe: meaning is carried by position, line style and labels.
-%   solid arrows  = creative activity and decisions
-%   dashed arrows = conditions shaping a step
-%   dotted arrows = documentation and analysis feeding back
+%   solid arrows  = sequence of phases
+%   dashed arrows = feedback that revises earlier decisions
+%   dotted arrows = evidence moving into interpretation
+%   grey bands    = processes that run across every phase
 \begin{tikzpicture}[
   font=\fontsize{8}{9.6}\selectfont,
   >={Stealth[length=2mm]},
   every node/.append style={execute at begin node={\hyphenpenalty=10000}},
-  box/.style={draw, rounded corners=2pt, fill=black!6, align=center,
-              text width=3.15cm, inner sep=3pt, minimum height=10mm},
-  data/.style={draw, fill=white, align=center, text width=3.15cm,
-               inner sep=3pt, minimum height=10mm},
+  phase/.style={draw, rounded corners=2pt, fill=black!6, align=center,
+                text width=2.45cm, inner sep=3pt, minimum height=15mm},
   flow/.style={->, thick},
-  doc/.style={->, densely dotted, thick},
-  infl/.style={->, dashed},
+  back/.style={->, dashed},
+  evid/.style={->, densely dotted, thick},
   lab/.style={font=\fontsize{7}{8.4}\selectfont, fill=white, inner sep=1pt},
-  band/.style={font=\fontsize{8}{9.6}\selectfont\bfseries, anchor=north west, inner sep=2pt}
+  band/.style={draw=black!40, fill=black!12, align=center, inner sep=2.5pt,
+               minimum width=15.2cm, font=\fontsize{7.5}{9}\selectfont}
 ]
-% ---- shaping conditions (act on transformation and negotiation) ----
-\node[draw, dashed, fill=white, align=center, text width=7.0cm, inner sep=3pt]
-  (sh) at (5.6,1.45) {\textbf{Shaping conditions:} interface rules and arrangement; asset library; facilitation; my design choices};
-
-% ---- creative cycle ----
-\node[box] (c1) at (0,0)      {1.\ Deliberate contribution\\(a participant's phrase)};
-\node[box] (c2) at (3.75,0)   {2.\ Proposed transformation\\(AI or human interpreter)};
-\node[box] (c3) at (7.5,0)    {3.\ Interpretation and negotiation\\(contributor, others, facilitator)};
-\node[box] (c4) at (7.5,-1.9) {4.\ Decision under the arrangement's approval rule};
-\node[box] (c5) at (3.75,-1.9){5.\ Incorporated into the shared work\\(later revision or removal reopens 3)};
-\node[box, fill=white] (cr) at (0,-1.9) {Not incorporated: continue differently or move on};
-
-\draw[flow] (c1) -- (c2);
-\draw[flow] (c2) -- (c3);
-\draw[flow] (c3) -- (c4);
-\draw[flow] (c4) -- node[lab, above]{accept} (c5);
-\draw[flow] (c4.north west) -- node[lab, pos=0.45]{revise or ask again} (c2.south east);
-\draw[flow] (c4.south) -- ++(0,-0.38) -| node[lab, pos=0.25, below]{refuse} (cr.south);
-\draw[flow] (cr) -- (c1);
-\draw[flow] (c5.north west) -- node[lab, pos=0.5]{next contribution} (c1.south east);
-\draw[infl] (sh.south -| c2.north) -- (c2.north);
-\draw[infl] (sh.south -| c3.north) -- (c3.north);
-
-% arrangements strip
-\node[draw, fill=white, align=left, text width=10.6cm, inner sep=3pt,
-      anchor=north, font=\fontsize{7}{8.4}\selectfont] (arr) at (3.75,-3.15)
- {\textbf{Arrangements (one per workshop):}
-  \emph{contributor-led}: AI proposes, contributor approves;\enspace
-  \emph{group-led}: AI proposes, group applies its agreed procedure;\enspace
-  \emph{human-mediated}: a rotating participant proposes with the same assets, contributor approves.};
-
-\begin{scope}[on background layer]
-  \node[draw=black!50, fill=black!2, rounded corners=3pt, inner xsep=3mm,
-        inner ysep=2.5mm, fit=(sh)(c1)(c3)(cr)(arr), yshift=1.5mm] (creative) {};
-\end{scope}
-\node[band] at (creative.north west) {Creative activity};
-
-% ---- research analysis ----
-\node[data] (d1) at (0,-6.0)    {\textbf{Materials:} video, screen and system records, interviews, design journal};
-\node[data] (d2) at (3.75,-6.0) {\textbf{Analysis:} multimodal episode accounts read with interview themes};
-\node[data] (d3) at (7.5,-6.0)  {\textbf{Inquiry:} recognition, creative authority, authorship (RQ1--RQ3)};
-\draw[flow] (d1) -- (d2);
-\draw[flow] (d2) -- (d3);
-\begin{scope}[on background layer]
-  \node[draw=black!50, fill=white, rounded corners=3pt, inner xsep=3mm,
-        inner ysep=2.5mm, fit=(d1)(d2)(d3), yshift=1.5mm] (research) {};
-\end{scope}
-\node[band] at (research.north west) {Research analysis};
-
-\draw[doc] (creative.south -| d1.north) -- node[lab, right=1pt]{documented as} (research.north -| d1.north);
-\draw[doc] (research.north -| d3.north) -- node[lab, right=1pt]{informs later design} (creative.south -| d3.north);
+% ---- phases ----
+\node[phase] (p1) at (0,0)     {\textbf{1. Studio inquiry}\\my artistic research with a GenAI and non-AI tool ecology};
+\node[phase] (p2) at (3.2,0)   {\textbf{2. Pilots}\\4--6 practitioner advisors refine scores and protocols};
+\node[phase] (p3) at (6.4,0)   {\textbf{3. Workshops}\\3 cohorts, 18--24 adults; participant observation};
+\node[phase] (p4) at (9.6,0)   {\textbf{4. Focus groups}\\one per cohort, semi-structured};
+\node[phase, line width=1.1pt] (p5) at (12.8,0) {\textbf{5. Co-created artwork}\\a way of knowing \emph{and} an assessable work; proposed exhibition};
+\draw[flow] (p1) -- (p2);
+\draw[flow] (p2) -- (p3);
+\draw[flow] (p3) -- (p4);
+\draw[flow] (p4) -- (p5);
+% ---- feedback ----
+\draw[back] (p3.north) to[out=150, in=30] node[lab, above] {scores, tools and rules revised} (p1.north);
+\draw[back] (p5.north) to[out=150, in=30] node[lab, above] {materials and decisions return to the group} (p3.north);
+% ---- interpretation ----
+\node[draw, thick, fill=white, align=center, text width=14.8cm, inner sep=4pt]
+  (diss) at (6.4,-2.15) {\textbf{Cultural interpretation and written dissertation (150--200 pp.)}\\
+  thematic, episode, artifact and platform analysis across three scales};
+\foreach \p in {p1,p3,p4,p5} \draw[evid] (\p.south) -- (\p.south |- diss.north);
+% ---- cross-cutting processes ----
+\node[band] (b1) at (6.4,-3.45) {\textbf{Reflexive documentation}: studio journal, field notes, failure log, decision trail};
+\node[band] (b2) at (6.4,-4.05) {\textbf{Consent, credit and data governance}: tiered, revisable, negotiated with participants};
+\node[band] (b3) at (6.4,-4.65) {\textbf{Iterative revision}: tool choices, scores and protocols change between sessions};
 \end{tikzpicture}
