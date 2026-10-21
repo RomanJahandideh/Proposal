@@ -150,3 +150,20 @@ All DOIs above were re-resolved on Crossref on 2026-10-20, and the metadata matc
 | Bianchi, Tao, Naous, Liu (bias benchmarks), Trajkova, Mathewson, Lyons, Guzman, Im, Chalk, Neville (as citations) | Removed by the reframing; entries kept in `references-additional.bib` | The brief asked to condense the benchmark list and reduce HCI dominance |
 | McCarthy *LAUREN*; Walshe essay | Moved to `references-additional.bib` (2026-10-21) | Artistic field narrowed to four practices tied to design decisions |
 | Bishop, Becker, Crawford | Kept, with paraphrase limited to the publisher description | Full texts not available in this session |
+
+
+## H. Integrity pass (2026-10-21, before push)
+
+| Item | Finding | Action |
+|---|---|---|
+| ISS paper, authoritative version | The accepted ISS Companion '26 version (ACM production page, 7 pp.) was read and now replaces the July manuscript. It reports: one animated amber halo per teammate; a trace "to interpret in context rather than a verdict"; Icon 3.90 s faster than No Cue (p < .001); Icon vs Numeric not significant (p = .098); invasiveness lower under Icon (3.19 vs 4.39); workload lower but treated descriptively (alpha = .13); Numeric higher on coordination usefulness and trust; participants "repeatedly asked for optional, mutable visibility", opt-in sharing, an immediate off switch and separate permissions | Rewrote the MA passage (B §2, C §4) and the plan of study |
+| ISS claims not in the accepted version | "Measurement constitutes", "subtle", "control over who could see it as a precondition" and "right to be illegible" are absent | Removed |
+| ISS DOI 10.1145/3845796.3859311 | Crossref 404; DOI handle API response code 100 (handle not found); ACM DL returns 403 to automated requests | Not printed; bibliography reads "Accepted; to appear" |
+| BioTerrarium | The July revision describes recruitment in the future tense; completion of data collection is not confirmed | Described as "an ongoing physiologically responsive Unity study … designed so that"; no N and no results |
+| Bishop | The book was not read | The claim now rests on Bishop's own words in Eschenburg (2014), *Contemporaneity* 3: 174–178, doi:10.5195/contemp.2014.113 (Crossref verified; quotation on p. 176) |
+| Becker | The book was not read | Limited paraphrase, "as discussed by Parker (2014, 39–46)", verified in Parker's dissertation; the "conventions decide whose contribution counts" claim was removed |
+| Crawford | Only the publisher's description had been read; Richards discusses a different aspect | Citation removed; the platform-companies claim now cites Richards (2025, 276): generative agents "inscribed with the priorities of platform companies, regulators, and … 'primary definers'" |
+| Fragile Devices | Chapter not consulted directly | Now "As discussed by Caines and Watson, drawing on Caines's 'Fragile Devices'" |
+| Caines & Watson p. 267 quotation | Verified, but cut for length | Removed from the body; entry still cited for pp. 255 and 273 |
+| Author name | eCAADe entry rendered "Romman" | Changed to "Roman Jahandideh"; no "Romman" in any PDF |
+| Fields | — | "Primarily Technology in Practice and secondarily Media & Culture" in all three documents; removed from the decision list |
