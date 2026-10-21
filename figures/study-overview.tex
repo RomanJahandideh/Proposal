@@ -23,10 +23,10 @@
 ]
 % ---- phases ----
 \node[phase] (p1) at (0,0)     {\textbf{1. Studio inquiry}\\my artistic research with a GenAI and non-AI tool ecology};
-\node[phase] (p2) at (3.2,0)   {\textbf{2. Pilots}\\4--6 practitioner advisors refine scores and protocols};
+\node[phase] (p2) at (3.2,0)   {\textbf{2. Consultation}\\4--6 paid consultants test scores and protocols};
 \node[phase] (p3) at (6.4,0)   {\textbf{3. Workshops}\\3 cohorts, 18--24 adults; participant observation};
 \node[phase] (p4) at (9.6,0)   {\textbf{4. Focus groups}\\one per cohort, semi-structured};
-\node[phase, line width=1.1pt] (p5) at (12.8,0) {\textbf{5. Co-created artwork}\\a way of knowing \emph{and} an assessable work; proposed exhibition};
+\node[phase, line width=1.1pt] (p5) at (12.8,0) {\textbf{5. Installation}\\room-scale, co-created; a way of knowing \emph{and} an assessable work};
 \draw[flow] (p1) -- (p2);
 \draw[flow] (p2) -- (p3);
 \draw[flow] (p3) -- (p4);
@@ -37,7 +37,7 @@
 % ---- interpretation ----
 \node[draw, thick, fill=white, align=center, text width=14.8cm, inner sep=4pt]
   (diss) at (6.4,-2.15) {\textbf{Cultural interpretation and written dissertation (150--200 pp.)}\\
-  thematic, episode, artifact and platform analysis across three scales};
+  episode, thematic, version and platform analysis (SQ1--SQ3)};
 \foreach \p in {p1,p3,p4,p5} \draw[evid] (\p.south) -- (\p.south |- diss.north);
 % ---- cross-cutting processes ----
 \node[band] (b1) at (6.4,-3.45) {\textbf{Reflexive documentation}: studio journal, field notes, failure log, decision trail};

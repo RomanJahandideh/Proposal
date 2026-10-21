@@ -1,4 +1,4 @@
-# Build and word-count report (2026-10-20)
+# Build and word-count report (updated 2026-10-21)
 
 ## Root files and outputs
 
@@ -23,9 +23,9 @@
 
 | Doc | TeXcount sum | PDF body prose | Table | Figure text | Title block | Pages | Limit |
 |---|---|---|---|---|---|---|---|
-| A | 495 | 462 (496 incl. heading block) | none | none | 34 | 1 | approximately 500 |
-| B | 3,369 | **3,473** | 194 | 108 | 58 | 8 + bibliography (pp. 9–13) | ≤ 3,500 (self-imposed, matching C) |
-| C | 3,345 | **3,463** | none | 108 | 46 | 9 + timeline on p. 10; bibliography pp. 10–14 | 8–10 pages + bibliography, max 3,500 words |
+| A | 493 | 460 (494 incl. heading block) | none | none | 34 | 1 | approximately 500 |
+| B | 3,294 | **3,419** | 194 | 108 | 58 | 8 + bibliography (pp. 9–13) | ≤ 3,500 (self-imposed, matching C) |
+| C | 3,283 | **3,397** | none | 108 | 46 | main text to p. 10; bibliography pp. 10–14 | 8–10 pages + bibliography, max 3,500 words |
 
 - The bibliography is outside the 3,500-word maximum. The Regulations state "8 - 10 pages + bibliography (maximum = 3500 words)".
 - C is set in 12 pt with 1.5 spacing, as before; A and B are in 11 pt.

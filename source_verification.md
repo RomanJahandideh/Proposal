@@ -124,6 +124,19 @@ All DOIs above were re-resolved on Crossref on 2026-10-20, and the metadata matc
 - **Current degree:** MA in Interactive Arts and Technology, SFU, in the iViz Lab (supervisor Steve DiPaola); Unity/C#, physiological interfaces, generative image models in design workflows.
 - **Publications:** eCAADe 2023 (doi:10.52842/conf.ecaade.2023.1.149; the proceedings spell the first author "Romman"). Teammate study accepted at ISS Companion '26 (doi:10.1145/3845796.3859311, not yet resolving). BioTerrarium manuscript under revision.
 
+- **MA manuscripts (read in full 2026-10-21):**
+  - *Reading a Remote Teammate's Body* (Downloads, 28-page manuscript, July 2026). Verified:
+    - HR and HRV rendered as one animated halo in a three-player Unity game.
+    - Measurement "constitutes rather than merely reports what it names"; the cue is a trace "to be interpreted rather than a verdict".
+    - Support came 3.9 s faster than No Cue, matching the Numeric Cue's speed at lower workload and invasiveness.
+    - The Numeric Cue was rated more trustworthy and more useful for coordination, and scored higher on mission score.
+    - The display was accepted only when "optional, mutable, and subtle"; the paper argues for "the right to be illegible" and asks who is accountable "for a partial view" of another person's body (§5.4).
+    - The accepted ISS Companion version (7 pp.) was not read in full; claims are phrased to match the July manuscript.
+  - *BioTerrarium* (SIGGRAPH version, January 2026). Verified:
+    - A Unity environment in which fog, vegetation and light diffusion respond to the player; "ambient reciprocity"; future work on a multiplayer environment.
+    - "HRV was recorded continuously but not visually represented."
+    - The July revision describes recruitment in the future tense, so **no BioTerrarium results are reported**.
+
 ## G. Removed or unverified
 
 | Item | Action | Reason |
@@ -135,4 +148,5 @@ All DOIs above were re-resolved on Crossref on 2026-10-20, and the metadata matc
 | Walshe cited for training-data labour | Removed from that claim | Not verified for that point; kept only for the confirmed sentence |
 | Epstein 2020 | Moved to additional | No longer cited |
 | Bianchi, Tao, Naous, Liu (bias benchmarks), Trajkova, Mathewson, Lyons, Guzman, Im, Chalk, Neville (as citations) | Removed by the reframing; entries kept in `references-additional.bib` | The brief asked to condense the benchmark list and reduce HCI dominance |
+| McCarthy *LAUREN*; Walshe essay | Moved to `references-additional.bib` (2026-10-21) | Artistic field narrowed to four practices tied to design decisions |
 | Bishop, Becker, Crawford | Kept, with paraphrase limited to the publisher description | Full texts not available in this session |
