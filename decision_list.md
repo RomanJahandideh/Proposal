@@ -1,6 +1,6 @@
 # Decisions for Roman and/or Dr. Caines (2026-10-21)
 
-1. **Participant burden.** Four workshops of about 2.5 h plus one focus group of 60–90 min per cohort, at roughly 11–12 h per person. Keep this, or reduce it to three workshops?
+1. **Participant burden.** Now three workshops of about 2.5 h plus a 60–90-min focus group, roughly 9 h per person. Confirm, or restore a fourth session if honoraria allow.
 2. **Compensation.** The honorarium rate for 18–24 participants and 4–6 consultants, plus access costs. Where would the funding come from? If it is short, which is reduced first: the sample or the number of sessions?
 3. **Primary tool modalities.** Which two modalities (for example image and sound, or text and voice) after Phase 1? Is a local open-weight model required, or are institutionally approved hosted tools acceptable?
 4. **Provisional artistic form.** Keep the room-scale, multichannel Unity installation as the provisional grammar, or keep the form more open?

@@ -30,3 +30,24 @@
 | Plan of study (A) | Rewritten around the new central question and continuity argument; four paragraphs; 494 words; no table | Brief §9 | — |
 | Internal note in B ("Revised in response to …") | Removed from the clean copy | Brief §9 | — |
 | Figure | Phase 2 is now "Consultation: 4–6 paid consultants"; Phase 5 is "Installation: room-scale, co-created"; the dissertation box maps analyses to SQ1–SQ3 | Consistency with the text | — |
+
+## Second pass (2026-10-21): final response to Dr. Caines's email
+
+- **Backup:** tag `pre-final-caines-revision-2026-10-21`.
+- **After this pass:** B 3,421 body words (TeXcount 3,305), 8 pp. + bibliography; C 3,399 (TeXcount 3,293), main text to p. 10; A 498 incl. heading (464 body), 1 page. 0 undefined citations or references.
+
+| Section | Revision | Reason |
+|---|---|---|
+| Summary (B, C) | New opening on practitioner identity, MA, architecture, interactive 3D and multiplayer work, and technical mediation; "models, interfaces and the platforms through which they are accessed"; subquestions, stakes, sequence, population, output, contributions and fields | Caines: state identity and questions first; grammar fix |
+| Stakes (§1) | "GenAI systems increasingly mediate access to and participation in some forms of cultural production"; ownership is not attributed to platforms; "may privilege, flatten, standardize, mistranslate, misrecognize or pass over"; why participation and authorship matter | Avoid totalizing claims |
+| Questions | SQ1 and SQ3 reworded; audience-reception disclaimer; argument and outcomes widened; definitions replaced (authorship no longer conflated with responsibility) | Brief §§7–9 |
+| Design | Consultant wording corrected (no pilots before ethics); recruitment logic tied to culturally situated practice; **workshops cut from four to three** (~9 h per person, make-up sessions); negotiation list; "without losing standing … negotiated authority"; installation paragraph as a second site of inquiry; venue and audience-data caveats | Participant burden; ethics clarity |
+| Analysis | The log statement; trajectories read through accounts, attribution, observation and uncertainty, not surveillance | Brief §16 |
+| Ethics | Decline forms of visibility; alternatives to GenAI; no performing trauma, representing a community or educating the researcher | Brief §17 |
+| Case study | Paragraph replaced: no project assumed; SSHRC project "may offer a possible context"; viable without any one case | Brief §18 |
+| Contributions | New originality text (conceptual, then methodological); five levels | Brief §19 |
+| Fit | "Primarily … secondarily"; why Communication & Culture rather than computer science; artwork implicated in the argument | Brief §20 |
+| C title block | Supervisor and committee placeholders replaced by an internal-draft label; timeline explains 2027–2028 | Brief §21C |
+| A (plan) | Seven exact corrections applied; integrated HR+HRV cue; "primarily/secondarily" | Brief §21B |
+| Spelling | analyze → analyse throughout | Brief §22 |
+| Bibliography | Doshi, York overview and PhD-page entries moved to additional (no longer cited) | All entries cited |
