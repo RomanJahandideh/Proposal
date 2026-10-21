@@ -51,3 +51,16 @@
 | A (plan) | Seven exact corrections applied; integrated HR+HRV cue; "primarily/secondarily" | Brief §21B |
 | Spelling | analyze → analyse throughout | Brief §22 |
 | Bibliography | Doshi, York overview and PhD-page entries moved to additional (no longer cited) | All entries cited |
+
+## Minor corrections (2026-10-21, after approval)
+
+- **Backup:** tag `pre-minor-corrections-2026-10-21`.
+
+| Issue | Exact revision | Reason |
+|---|---|---|
+| BioTerrarium status | B and C (`sections/position.tex`): "BioTerrarium, a completed within-subjects Unity study with 24 participants, examined how physiological input could shape fog, vegetation, lighting and visual clarity without relying on a numerical display, an approach I call ambient reciprocity; the associated manuscript is currently under revision." A: "…and BioTerrarium, a world whose fog and light respond to the player, evaluated in a completed within-subjects study with 24 participants (manuscript under revision)." Bibliography note updated; the decision-list item was removed | The author confirmed the study was completed; no statistics are added |
+| Plan of study opening | Replaced with the author's wording (MA at SFU; interactive 3D environments and multiplayer systems); the later "Simon Fraser University's" became "the iViz Lab"; the repeated "Each stage of my training…" sentence was removed | Author's instruction; keeps the plan at about 500 words |
+| Duplicated plan title | "Plan of Research: AI-Mediated Communication in Collective Creative Practice" removed; the principal title is kept, then "Proposed Plan of Study — PhD in Communication & Culture, Fall 2027", then the name | Author's instruction |
+| Platform-power sentence | "…shaped largely by the companies that develop and operate these systems (Richards, 2025, 276)" replaces "…platform companies and regulators" | Author's instruction |
+| Formal-proposal margin | C only: added a `\ifformalversion` switch, which omits two sentences that repeat other sections (problem: "One qualitative study…"; design: the research-creation option sentence, which the fit section repeats). Title note, figure caption, Sources line and timeline note shortened. A page-4 `\enlargethispage` that had become unnecessary (it pushed text into the page number) was removed. B is unchanged apart from the BioTerrarium and platform sentences | Safer word margin |
+| Application checklist | New `application_checklist.md` with the single-authored writing-sample item | Author's instruction; kept out of the proposals |

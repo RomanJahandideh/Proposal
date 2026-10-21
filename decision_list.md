@@ -7,4 +7,3 @@
 5. **Venue.** Approach the Markham Campus Art Gallery? Which alternative York or partner venue would serve as the fallback?
 6. **Case-study connection.** After Phase 1: whether to connect to *Interfacing, Playtesting, Resetting* or another project, and in which of the three forms. Roles, governance, ethics, data, credit and outputs to be agreed then.
 7. **Recruitment channels.** Open calls only, or also AMPD and York Region arts networks? Confirm the exclusion of students Roman teaches.
-8. **BioTerrarium status (Roman).** Was the n = 24 study conducted as the January manuscript reports? The July revision uses the future tense. Until this is confirmed, the proposals report no BioTerrarium results.

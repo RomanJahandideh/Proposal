@@ -49,6 +49,10 @@
 \usetikzlibrary{arrows.meta, positioning, fit, backgrounds}
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage[round,authoryear]{natbib}
+% Omits a few sentences in sections/*.tex that repeat other sections, to keep
+% a safe margin under the 3,500-word maximum (2026-10-21).
+\newif\ifformalversion
+\formalversiontrue
 \usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
 
@@ -68,8 +72,8 @@
   {\bf Roman Jahandideh}\\[3pt]
   PhD Dissertation Proposal (research-creation option)\\
   Joint Graduate Program in Communication \& Culture, York University\\[3pt]
-  \textit{Internal future-stage draft prepared before admission. Not an
-  application document and not an approved York dissertation proposal.}
+  \textit{Internal draft prepared before admission; not an application
+  document or an approved York proposal.}
 \end{center}
 
 \section*{Summary}
@@ -88,10 +92,6 @@
 
 \subsection{Expected contribution and originality}
 \input{sections/contributions}
-% Page-break fix (2026-10-21): lets p. 4 hold two more lines so the Methods
-% heading and its opening paragraph are not pushed over, leaving p. 4 a third
-% empty. Remove if the text above changes length.
-\enlargethispage{2\baselineskip}
 
 \section{Methods and sources}
 
@@ -102,9 +102,8 @@
 \centering
 \setstretch{1.0}
 \input{figures/study-overview}
-\caption{Proposed research-creation design. Solid arrows show the sequence
-of phases, dashed arrows feedback, and dotted arrows evidence moving into
-interpretation; grey bands run across every phase.}
+\caption{Proposed research-creation design: phases (solid), feedback
+(dashed) and evidence (dotted).}
 \label{fig:overview}
 \end{figure}
 
@@ -113,8 +112,7 @@ interpretation; grey bands run across every phase.}
 \input{sections/ethics}
 
 \subsection{Sources}
-Primary sources are generated in the five phases, with interface
-documentation and terms of service; secondary sources appear in
+Primary sources come from the five phases; secondary sources appear in
 Section~\ref{sec:lit}.
 
 \subsection{Anticipated problems of access}
@@ -143,8 +141,8 @@ Section~\ref{sec:lit}.
 
 \section{Proposed timeline}
 
-Full-time from Fall 2027; 2027--2028 covers coursework, comprehensive
-examinations, literature review and the start of studio inquiry.
+Full-time from Fall 2027; 2027--28 covers coursework, examinations,
+literature review and the start of studio inquiry.
 
 \begin{description}[font=\normalfont, labelwidth=8.9em, leftmargin=9.5em,
   labelsep=0.6em, itemsep=0pt]
